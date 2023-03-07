@@ -55,45 +55,38 @@
 
 <body>
 
-  <template id="viewer-1-template">
-    # 안녕하세요.
-    ## 반가워요.
-    - 하하
-    - 호호
-    - 히히
+  <div id="viewer-1">
+</div>
 
-    # 자바
-    ```java
-    // 주석입니다.
-    int a = 10;
-    int b = 20;
-    System.out.println(a + b);
-    ```
-
-    $$katex
-    x^2 + y^2 = 1
-    $$
-
-    ```html
-    <script src="경로"></script>
-    ```
-
-    $$uml
-    (First usecase)
-    (Another usecase) as (UC2)
-    usecase UC3
-    usecase (Last\nusecase) as UC4
-    $$
-  </template>
-
-
-  <div id="viewer-1"></div>
-  <ul>
-    <li><a href="javascript:showPage(4);">4번글</a></a></li>
-    <li><a href="javascript:showPage(3);">3번글</a></a></li>
-    <li><a href="javascript:showPage(2);">2번글</a></a></li>
-    <li><a href="javascript:showPage(1);">1번글</a></a></li>
-</ul>
+<ul class="list">
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-4">4</span>
+      <span class="mr-auto underline">uml 예시</span>
+      <span>2023-03-07</span>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-3">3</span>
+      <span class="mr-auto underline">HTML 기초</span>
+      <span>2023-03-07</span>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-2">2</span>
+      <span class="mr-auto underline">CSS 기초</span>
+      <span>2023-03-07</span>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-1">1</span>
+      <span class="mr-auto underline">JAVA 기초</span>
+      <span>2023-03-07</span>
+    </a>
+  </li>
   <script>
     function stripIndent(str) {
       const lines = str.split("\n");
